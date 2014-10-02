@@ -11,6 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * @author wanglijie
+ * This is an exercise in Android.
+ * Will complete it in future.
+ */
 public class Calculator extends Activity {
 
 	// Implement a Calculator
