@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="calculator">This is a Calculator</string>
+
+    <string name="symbol">乘以</string>
+    <string name="calculate">计算</string>
+    <string name="result">result</string>
+</resources>
