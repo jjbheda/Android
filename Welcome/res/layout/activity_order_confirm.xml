@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/confirmStepImgV" android:background="@drawable/step4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/confirmTitleLayout" android:background="@drawable/btn_layout_bg" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/confirm_back_imgv" android:background="@drawable/button_bg" android:padding="10.0dip" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/back" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center" android:layout_width="2.0dip" android:layout_height="24.0dip" android:src="@drawable/head_separator" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/purple" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确认订单" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/totalLayout" android:background="#ffffffee" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/confirmTitleLayout">
+        <TextView android:textSize="15.0sp" android:textColor="@color/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品总价（不含运费）：" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/red" android:id="@id/confirmTotalTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥4450.00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/confirmBottomLayout" android:layout_below="@id/totalLayout">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/confirmOrderLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/confirmBottomLayout" android:background="@drawable/btn_layout_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/purple" android:id="@id/confirmBtn" android:background="@drawable/button_2_seletor" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="确定" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/nickTv" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="赛德体育专营店" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.ghost.xianyu.view.NetImageView android:id="@id/shoppingPicImgV" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/pic_loading" android:layout_below="@id/nickTv" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/shoppingInfoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/selectedCb" android:layout_toRightOf="@id/shoppingPicImgV" android:layout_alignTop="@id/shoppingPicImgV">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/shoppingTitleTv" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="江浙沪2桶包邮 羽毛球 正品凯胜 KS15 鹅毛耐打王 1个江浙沪2桶包邮 羽毛球 正品凯胜 KS15 鹅毛耐打王 1个" android:maxLines="2" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff777777" android:ellipsize="end" android:id="@id/propsTv" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="羽毛球包裝:77速：1桶装（12只）羽毛球包裝:77速：1桶装（12只）" android:maxLines="2" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/shoppingInfoLayout" android:layout_alignLeft="@id/shoppingInfoLayout">
+        <TextView android:textColor="#ff777777" android:id="@id/shoppingNumTv" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量：1" />
+        <TextView android:textColor="#ffff0000" android:id="@id/priceTv" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="￥1.00" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <CheckBox android:id="@id/selectedCb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignTop="@id/shoppingPicImgV" android:layout_alignParentRight="true" />
+</RelativeLayout>

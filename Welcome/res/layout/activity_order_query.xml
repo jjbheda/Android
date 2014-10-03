@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/queryStepImgV" android:background="@drawable/step5" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_layout_bg" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/query_back_imgv" android:background="@drawable/button_bg" android:padding="10.0dip" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/back" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center" android:layout_width="2.0dip" android:layout_height="24.0dip" android:src="@drawable/head_separator" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/purple" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="订单中心" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/queryTaobaoLayout" android:background="@color/light_blue" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="淘宝商城" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/queryOtherLayout" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他商城" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.ghost.xianyu.view.MyListView android:id="@id/queryListView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

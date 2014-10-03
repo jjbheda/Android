@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" package="com.ghost.xianyu"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/app_icon" android:name="com.ghost.xianyu.application.SampleApplication" android:allowBackup="true">
+        <receiver android:label="NetworkConnection" android:name="com.ghost.xianyu.util.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.ghost.xianyu.Login" />
+        <activity android:name="Home" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="callback" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Register" />
+        <activity android:name="PasswrodRetake" />
+        <activity android:name="Cart" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="OrderSelect" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="OrderConfirm" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="GuidePage" />
+        <activity android:name="Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="OrderQuery" />
+    </application>
+</manifest>

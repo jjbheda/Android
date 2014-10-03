@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/btn_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="70.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <EditText android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/login_phone_et" android:background="@drawable/edittext_bg" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:hint="请输入手机号码" android:layout_weight="1.0" android:inputType="phone" android:imeOptions="actionNext">
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <EditText android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/login_password_et" android:background="@drawable/edittext_bg" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:hint="请输入密码" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionDone" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <CheckBox android:textColor="@color/purple" android:id="@id/remember_password_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="记住密码" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="10.0dip">
+            <Button android:textColor="@color/purple" android:id="@id/login_btn" android:background="@drawable/button_2_seletor" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="登录" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/purple" android:id="@id/register_tv" android:background="@drawable/button_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="免费注册" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/purple" android:id="@id/find_password_tv" android:background="@drawable/button_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="找回密码" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

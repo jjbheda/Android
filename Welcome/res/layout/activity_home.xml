@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/homeStepImgV" android:background="@drawable/step1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/homeLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/homeTitleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/title" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/searchLayout" android:background="@drawable/search_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/homeBottomLayout" android:layout_below="@id/homeTitleLayout">
+            <EditText android:id="@id/searchEt" android:background="@color/white" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:ems="10" android:layout_toLeftOf="@id/searchPageImgV" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <requestFocus />
+            </EditText>
+            <ImageView android:id="@id/searchPageImgV" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/search1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mallLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/homeBottomLayout" android:layout_below="@id/homeTitleLayout">
+            <TextView android:textColor="@color/red" android:background="@color/transparent_black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您使用的是公测版，如有问题，请向客服反馈" />
+            <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/taobaoImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/taobao1" android:layout_weight="1.0" />
+                <ImageView android:id="@id/jumeiImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jumei2" android:layout_weight="1.0" />
+                <ImageView android:id="@id/lefengImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lefeng3" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/vanclImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vancl4" android:layout_weight="1.0" />
+                <ImageView android:id="@id/yhdImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yhd5" android:layout_weight="1.0" />
+                <ImageView android:id="@id/vipshopImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vipshop6" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/dangdangImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dangdang7" android:layout_weight="1.0" />
+                <ImageView android:id="@id/jdImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jd8" android:layout_weight="1.0" />
+                <ImageView android:id="@id/amazonImgV" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amazon9" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/meituanImgV" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/meituan10" android:layout_weight="1.0" />
+                <ImageView android:id="@id/dianpingImgV" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dianping11" android:layout_weight="1.0" />
+                <ImageView android:id="@id/searchImgV" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="50.0dip" android:src="@drawable/search" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/homeBottomLayout" android:background="@drawable/buttons_area_bg" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/mallImgV" android:background="@drawable/button_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/mall" android:layout_weight="1.0" />
+            <ImageView android:id="@id/queryImgV" android:background="@drawable/button_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/query" android:layout_weight="1.0" />
+            <ImageView android:id="@id/myCartImgV" android:background="@drawable/button_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/cart1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mainLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/titleLayout" android:background="@drawable/btn_layout_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/homeImgV" android:background="@drawable/button_bg" android:paddingTop="8.0dip" android:paddingBottom="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/home" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/payImgV" android:background="@drawable/button_bg" android:padding="2.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/pay" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/cartImgV" android:background="@drawable/button_bg" android:paddingBottom="3.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/cart" android:layout_toLeftOf="@id/payImgV" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <WebView android:id="@id/content_wb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/mainBottomLayout" android:layout_below="@id/titleLayout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/mainBottomLayout" android:background="@color/gray_bar" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/goBackImgV" android:background="@drawable/button_bg" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/goback" android:layout_weight="1.0" />
+            <ImageView android:id="@id/goForwardImgV" android:background="@drawable/button_bg" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/goforward" android:layout_weight="1.0" />
+            <ImageView android:id="@id/refreshImgV" android:background="@drawable/button_bg" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/refresh" android:layout_weight="1.0" />
+            <ImageView android:id="@id/createImgV" android:background="@drawable/button_bg" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/create" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/loadingPagePb" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>
